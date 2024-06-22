@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    perspective: 500px;
+}
+
+.chessboard {
+    width: 640px;
+    height: 640px;
+    margin: 20px;
+    border: 25px solid #333;
+    transform: rotateX(20deg) rotateY(20deg) rotateZ(12deg);
+    transform-style: preserve-3d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.black, .white {
+    float: left;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.black {
+    background-color: #999;
+}
+
+.white {
+    background-color: #fff;
+}
+h1 {
+    font-family: sans-serif;
+    margin: 20px;
+    margin-top: -50px;
+    transform: rotateX(20deg) rotateY(20deg) rotateZ(15deg);
+}
